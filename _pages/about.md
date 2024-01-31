@@ -2,7 +2,7 @@
 layout: about
 title: Home
 permalink: /
-subtitle: <a href='#'>Luce in altis, sicut stellae.</a> Nevertheless
+subtitle: <a href='#'>Luce in altis, sicut stellae.</a> | Nevertheless
 
 profile:
   align: right

@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://namdarine.github.io/al-folio/sitemap.xml
+Sitemap: https://namdarine.github.io/sitemap.xml

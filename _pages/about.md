@@ -23,4 +23,3 @@ Hi,
 This is Nam Gyu Lee from South Korea (Republic of Korea) :kr:
 
 I am a student pursuing my undergraduate degree in Artificial Intelligence with a minor in Applied Mathematics at [Illinois Institute of Technology (IIT)](https://www.iit.edu/).
-

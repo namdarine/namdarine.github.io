@@ -4,7 +4,7 @@
 
 title: # the website title (if blank, full name will be used instead)
 first_name: Nam Gyu
-middle_name: 
+middle_name:
 last_name: Lee
 email: namdarine.code@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -292,9 +292,9 @@ display_categories: ["blockquotes"] # these categories will be displayed on the 
 #  source: /_bibliography/
 #  bibliography: papers.bib
 #  bibliography_template: bib
-  # Note: if you have latex math in your bibtex, the latex filter
-  # preprocessing may conflict with MathJAX if the latter is enabled.
-  # See https://github.com/alshedivat/al-folio/issues/357.
+# Note: if you have latex math in your bibtex, the latex filter
+# preprocessing may conflict with MathJAX if the latter is enabled.
+# See https://github.com/alshedivat/al-folio/issues/357.
 #  bibtex_filters: [latex, smallcaps, superscript]
 
 #  replace_strings: true

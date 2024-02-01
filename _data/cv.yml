@@ -2,96 +2,116 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Nam Gyu Lee
     - name: Date of Birth
-      value: 14th March 1879
+      value: 19th November 1994
     - name: Languages
-      value: English, German
+      value: Korean, English
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Bachelor of Science
+      institution: Illinois Institute of Technology, Chicago, IL, US
+      year: Current
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - College of Computer Science, Artificial Intelligence major
+        - Minor in Applied Mathmatics
+        - title: Relevent Courses
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+            - Data Structure, Algorithm, Data Mining
+            - Statistics, Regression
+    - title: Certificate
+      institution: Everett Community College, Everett, WA, US
+      year: 2018
       description:
-        - Description 1.
-        - Description 2.
+        - Major in Aviation Maintenance 
+
+- title: Skills
+  type: nested_list
+  contents:
+    - title: Technical Skills
+      items: Aviation Maintenance
+    - title: Programming Languages
+      items: JAVA, PYTHON, R, HASKELL, PostgreSQL, HTML, CSS
+
+- title: License
+  type: nested_list
+  contents:
+    - title: MOLIT A&P
+      items:
+        - Year of Issue | 2020
+        - Issuing Department | Ministry of Land, Infrastructure and Transport (MOLIT)
+        - Country of Issue | Republic of Korea (South Korea)
+    - title: FAA A&P
+      items:
+        - Year of Issue | 2017
+        - Issuing Department | Federal Aviation Administration (FAA)
+        - Country of Issue   | United States of America
+
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Military Service
+      institution: Republic of Korea Army (ROKA)
+      year: 2018 - 2020
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - May 2018 - Jan 2020
+        - title: Leadership Experience
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+            - Squad Leader for about 8 months
+    - title: Internal Affairs
+      institution: IIT KSA (Korean Students Associate)
+      year: 2023 - 2024
       description:
-        - Description 1.
-        - Description 2.
+        - Aug 2023 - Present
+        - Oversight of Event Planning and Execution
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
+#    - title: Director
+#      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
+#      year: 1917-1933
 
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
+#    - title: Professor of Theoretical Physics
+#      institution: Karl-Ferdinand University, Prague, Czechoslovakia
+#      year: 1911 - 1917
+#      description:
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+#    - title: Associate Professor of Theoretical Physics
+#      institution: University of Zurich, Zurich, Switzerland
+#      year: 1909 - 1911
 
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+#- title: Open Source Projects
+#  type: time_table
+#  contents:
+#    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+#      year: 2015-now
+#      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+#- title: Honors and Awards
+#  type: time_table
+#  contents:
+#    - year: 1921
+#      items:
+#        - Nobel Prize in Physics
+#        - Matteucci Medal
+#    - year: 2029
+#      items:
+#        - Max Planck Medal
 
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+#- title: Academic Interests
+#  type: nested_list
+#  contents:
+#    - title: Topic 1.
+#      items:
+#        - Description 1.
+#        - Description 2.
+#    - title: Topic 2.
+#      items:
+#        - Description 1.
+#        - Description 2.
 
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+#- title: Other Interests
+#  type: list
+#  contents:
+#    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.

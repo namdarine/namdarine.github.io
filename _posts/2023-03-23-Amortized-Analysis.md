@@ -41,7 +41,7 @@ In general, it is easy to see that **Increment(*A*)** has worst-case time comple
 
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
-{% include figure.liquid path="assets/img/Amortized_Analysis.png" class="img-fluid rounded z-depth-1" width="400" height="600" %}
+{% include figure.liquid loading="eager" path="assets/img/Amortized_Analysis.png" class="img-fluid rounded z-depth-1" width="400" height="600" %}
 </div>
 </div>
 

@@ -10,7 +10,7 @@ description: Concepts and understanding of Binary Search Tree (BST)
 
 tags: WIL
 
-categories: JAVA, Data_Structure
+categories: JAVA Data_Structure
 
 toc:
   sidebar: left
@@ -27,7 +27,7 @@ Tree is a **nonlinear** structure in which each node is capable of having many s
 - **Subtree**: A node and all of its descendants form a subtree rooted at the node.
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
-{% include figure.liquid path="assets/img/BST/BST_structure.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/BST/BST_structure.png" class="img-fluid rounded z-depth-1" %}
 </div>
 </div>
 
@@ -35,7 +35,7 @@ Tree is a **nonlinear** structure in which each node is capable of having many s
 A tree's subtrees must be disjoint. There is a unique path from the root of a tree to any other node of the tree. Every child has only one parent.
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
-{% include figure.liquid path="assets/img/BST/BST_require.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/BST/BST_require.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 </div>
 
@@ -51,7 +51,7 @@ A tree's subtrees must be disjoint. There is a unique path from the root of a tr
 ### Example
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
-{% include figure.liquid path="assets/img/BST/BST_example.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/BST/BST_example.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 </div>
 
@@ -63,7 +63,7 @@ A tree's subtrees must be disjoint. There is a unique path from the root of a tr
 
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
-{% include figure.liquid path="assets/img/BST/BST_level.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/BST/BST_level.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 </div>
 
@@ -75,7 +75,7 @@ Also called "level-order traversal"
 Using Queue
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
-{% include figure.liquid path="assets/img/BST/BST_breadth.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/BST/BST_breadth.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 </div>
 
@@ -83,7 +83,7 @@ Using Queue
 Using Stack
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
-{% include figure.liquid path="assets/img/BST/BST_depth.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/BST/BST_depth.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 </div>
 
@@ -102,7 +102,7 @@ A binary tree in which the key value in any node.
 ## Traversals
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
-{% include figure.liquid path="assets/img/BST/BST_traversal.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/BST/BST_traversal.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 </div>
 
@@ -333,7 +333,7 @@ A new node is always inserted into its appropriate position in the tree as a lea
 If a new node is smaller than a root node, add the new node on the left of the root node. If it is greater than the root node, add it on the right of the root node.
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
-{% include figure.liquid path="assets/img/BST/BST_add.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/BST/BST_add.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 </div>
 
@@ -379,7 +379,7 @@ Removing a leaf is simply a matter of setting the <U>appropriate link of its par
 
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
-{% include figure.liquid path="assets/img/BST/BST_remove_leaf.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/BST/BST_remove_leaf.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 </div>
 
@@ -388,7 +388,7 @@ Make the reference from the parent <U>skip over the removed node and point inste
 
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
-{% include figure.liquid path="assets/img/BST/BST_remove_child.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/BST/BST_remove_child.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 </div>
 
@@ -397,7 +397,7 @@ Replaces the node's info with the info from another node in the tree so that the
 
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
-{% include figure.liquid path="assets/img/BST/BST_remove_children.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/BST/BST_remove_children.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 </div>
 
@@ -453,14 +453,14 @@ private BSTNode<T> removeNode (BSTNode<T> node) {
 Compare BST to Linear LIsts
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
-{% include figure.liquid path="assets/img/BST/BST_bigO.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/BST/BST_bigO.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 </div>
 
 ## Binary Tree and its Array Representation
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
-{% include figure.liquid path="assets/img/BST/BST_array.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/BST/BST_array.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 </div>
 
@@ -477,7 +477,7 @@ If the tree is complete, this representation works best, space wise.
 A binary tree in which all of the leaves are on the same level and every non-leaf node has two children.
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
-{% include figure.liquid path="assets/img/BST/BST_full.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/BST/BST_full.png" class="img-fluid rounded z-depth-1" %}
 </div>
 </div>
 
@@ -485,7 +485,7 @@ A binary tree in which all of the leaves are on the same level and every non-lea
 A binary tree that is either full or full through the next-to-last level, with the leaves on the last level as far to the left as possible.
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
-{% include figure.liquid path="assets/img/BST/BST_complete.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/BST/BST_complete.png" class="img-fluid rounded z-depth-1" %}
 </div>
 </div>
 

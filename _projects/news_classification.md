@@ -57,7 +57,7 @@ Due to the higher value of the silhouette score, use the Title and Description c
 
 <div class="row mt-3">
 	<div class="col-sm mt-3 mt-md-0">
-	{% include figure.liquid path="/assets/img/news_classification/cluster_visualization.png" class="img-fluid rounded z-depth-1" %}
+	{% include figure.liquid loading="eager" path="/assets/img/news_classification/cluster_visualization.png" class="img-fluid rounded z-depth-1" %}
 	</div>
 </div>
 
@@ -112,7 +112,7 @@ Due to the higher value of the silhouette score, use the Title and Description c
 
 <div class="row mt-3">
 	<div class="col-sm mt-3 mt-md-0">
-	{% include figure.liquid path="/assets/img/news_classification/GPT_kmeans_visualization.png" class="img-fluid rounded z-depth-1" %}
+	{% include figure.liquid loading="eager" path="/assets/img/news_classification/GPT_kmeans_visualization.png" class="img-fluid rounded z-depth-1" %}
 	</div>
 </div>
 
@@ -164,7 +164,7 @@ Due to the higher value of the silhouette score, use the Title and Description c
 
 <div class="row mt-3">
 	<div class="col-sm mt-3 mt-md-0">
-	{% include figure.liquid path="/assets/img/news_classification/Gemini_kmeans_Visulalization.png" class="img-fluid rounded z-depth-1" %}
+	{% include figure.liquid loading="eager" path="/assets/img/news_classification/Gemini_kmeans_Visulalization.png" class="img-fluid rounded z-depth-1" %}
 	</div>
 </div>
 
@@ -209,7 +209,7 @@ Result: loss: 0.5434 - accuracy: 0.8100 {'loss': 0.5433962345123291, 'accuracy':
 
 <div class="row mt-3">
 	<div class="col-sm mt-3 mt-md-0">
-	{% include figure.liquid path="/assets/img/news_classification/Gemini_Classifier_Performance.png" class="img-fluid rounded z-depth-1" %}
+	{% include figure.liquid loading="eager" path="/assets/img/news_classification/Gemini_Classifier_Performance.png" class="img-fluid rounded z-depth-1" %}
 	</div>
 </div>
 

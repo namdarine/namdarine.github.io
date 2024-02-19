@@ -10,7 +10,7 @@ description: Concepts and understanding of Perceptron
 
 tags: WIL
 
-categories: AI, Data_Mining
+categories: AI Data_Mining
 
 toc:
   sidebar: left
@@ -20,7 +20,7 @@ The perceptron was investigated in 1957 by Frank Rosenblatt at Cornell. It was t
 
 <div class="row mt-3">
 	<div class="col-sm mt-3 mt-md-0">
-	{% include figure.liquid path="/assets/img/Perceptron/neuron_anatomy.jpg" class="img-fluid rounded z-depth-1" %}
+	{% include figure.liquid loading="eager" path="/assets/img/Perceptron/neuron_anatomy.jpg" class="img-fluid rounded z-depth-1" %}
 	</div>
 </div>
 
@@ -31,7 +31,7 @@ It is characterized as a **feed-forward** neural network that solves linearly se
 	
 <div class="row mt-3">
 	<div class="col-sm mt-3 mt-md-0">
-	{% include figure.liquid path="assets/img/Perceptron/linear_seperable.png" class="img-fluid rounded z-depth-1" %}
+	{% include figure.liquid loading="eager" path="assets/img/Perceptron/linear_seperable.png" class="img-fluid rounded z-depth-1" %}
 	</div>
 </div>
 
@@ -39,7 +39,7 @@ More complex neural networks can solve data mining or learning tasks more effect
 
 <div class="row mt-3">
 	<div class="col-sm mt-3 mt-md-0">
-	{% include figure.liquid path="assets/img/Perceptron/diagram.png" class="img-fluid rounded z-depth-1" %}
+	{% include figure.liquid loading="eager" path="assets/img/Perceptron/diagram.png" class="img-fluid rounded z-depth-1" %}
 	</div>
 </div>
 
@@ -55,7 +55,7 @@ However, even for binary classes, the perceptron cannot recognize the XOR functi
 
 <div class="row mt-3">
 	<div class="col-sm mt-3 mt-md-0">
-	{% include figure.liquid path="assets/img/Perceptron/perceptron_example.png" class="img-fluid rounded z-depth-1" %}
+	{% include figure.liquid loading="eager" path="assets/img/Perceptron/perceptron_example.png" class="img-fluid rounded z-depth-1" %}
 	</div>
 </div>
 

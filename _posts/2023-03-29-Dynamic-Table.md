@@ -93,7 +93,7 @@ $$\hat{c_i} = (m + 1) + (2\cdot(m + 1) - 2m) - (2\cdot m - m)$$
 
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
-{% include figure.liquid path="assets/img/Dynamic_Table.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/Dynamic_Table.png" class="img-fluid rounded z-depth-1" %}
 </div>
 </div>
 

@@ -170,7 +170,7 @@ collections:
     defaults:
       layout: post
     output: true
-    permalink: /news/:path/
+    permalink: /Timeline/:path/
   projects:
     output: true
     permalink: /projects/:path/

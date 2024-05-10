@@ -276,7 +276,7 @@ jekyll-archives:
     category: "/blog/category/:name/"
 
 display_tags: ["WIL", "WIS"] # these tags will be displayed on the front page of your blog
-display_categories: ["AI", "Data_Mining", "Python", "Algorithm", "Data_Structure"] # these categories will be displayed on the front page of your blog
+display_categories: ["AI", "Data_Mining", "Python", "Algorithm", "Data_Structure", "Cloud_Computing"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

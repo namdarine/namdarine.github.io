@@ -379,7 +379,7 @@ Removing a leaf is simply a matter of setting the <U>appropriate link of its par
 
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
-{% include figure.liquid loading="eager" path="assets/img/BST/BST_remove_leaf.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid loading="eager" path="assets/img/BST/BST_romove_leaf.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 </div>
 

@@ -3,5 +3,6 @@ github_users:
 
 github_repos:
   - namdarine/IIT_CLASS
-  - namdarine/news_article_classification
+  - namdarine/ML_PaaS
   - namdarine/TIF_Chicago_Project
+  - namdarine/news_article_classification

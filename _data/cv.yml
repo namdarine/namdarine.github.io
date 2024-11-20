@@ -6,21 +6,21 @@
     - name: Date of Birth
       value: 19th November 1994
     - name: Languages
-      value: Korean, English
+      value: English, Korean
 
 - title: Education
   type: time_table
   contents:
     - title: Bachelor of Science
       institution: Illinois Institute of Technology, Chicago, IL, US
-      year: Current
+      year: 2025
       description:
         - College of Computer Science, Artificial Intelligence major
         - Minor in Applied Mathmatics
         - title: Relevent Courses
           contents:
-            - Data Structure, Algorithm, Data Mining
-            - Statistics, Regression
+            - Data Structure, Algorithm, Machine Learning, AI-Language Understanding, Data Mining, Linear Optimization, Regression, Information Security
+
     - title: Certificate
       institution: Everett Community College, Everett, WA, US
       year: 2018
@@ -30,10 +30,72 @@
 - title: Skills
   type: nested_list
   contents:
+    - title: Programming Languages
+      items: PYTHON, JAVA, R, HTML, CSS 
+    - title: FRAMEWORKS & LIBRARIES
+      items: TensorFlow, Scikit-learn, Transformers, NLTK, pySpark
+    - title: DATABASE
+      items: PostgreSQL
+    - title: Tools
+      items: Git, AWS, Docker
+    - title: Interpersonal
+      items: Leadership, Teamwork, Mission-oriented planning, Event management, Community-building
     - title: Technical Skills
       items: Aviation Maintenance
-    - title: Programming Languages
-      items: JAVA, PYTHON, R, HASKELL, PostgreSQL, HTML, CSS
+
+- title: Project Experience
+ type: time_table
+ contents:
+   - title: <a href="https://github.com/namdarine/ML_PaaS ">Machine Learning PaaS Web Application</a>
+     year: 2024
+     description: Individual Project| May 2024 - Present
+        Developing a scalable Machine Learning Platform as a Service web app that allows users to upload datasets for clustering or classification. The system uses AWS for distributed processing.
+      - Developing proficiency in containerizing applications and managing cloud resources, focusing on automating machine learning workflows for scalable web applications.
+     Technologies Used: AWS, Python, Flask, pySpark, Docker
+
+     - title: <a href="https://github.com/namdarine/TIF_Chicago_Project">Chicago TIF Analysis</a>
+     year: 2024
+     description: Illinois Tech | Jan 2024 - Apr 2024
+        Collaborated with a team of 5 to analyze the correlation between income, education, and TIF districts in Chicago, uncovering potential inequalities linked to TIFs and their socioeconomic impact on various racial demographics.
+        -	Led data extraction and filtering to ensure clean, relevant data for analysis aligned with the project requirements, enhancing overall project accuracy and reliability.
+        -	This role improved my knowledge of data processing and critical analysis, deepening my understanding of data’s role in highlighting social and economic disparities.
+        Results: Found a 50% income gap between predominantly white ($76K) and non-white ($38K) TIF districts, indicating potential biases in fund allocation.
+        Technologies Used: Python, Pandas, GeoJSON, k-Means Clustering
+    
+    - title: <a href="https://github.com/namdarine/IIT_CLASS/tree/main/AI_LU/Assignment2">Wine classification with Naïve Bayes classifier</a>
+     year: 2024
+     description: Illinois Tech, Individual Project | March 2024
+        Implemented a Naïve Bayes classifier to categorize wine reviews, reducing label categories for efficiency.
+        -	Learned that removing stop words during preprocessing significantly impacted model performance, highlighting the importance of feature engineering in text classification.
+        Results: Achieved Macro-averaged F1-score: 0.7115, Micro-averaged F1-score: 0.7728
+        Technologies Used: Python, Pandas, Numpy, Matplotlib
+    
+    - title: <a href="https://github.com/namdarine/news_article_classification">Unsupervised Learning-Based Comparison for News Article Topic</a>
+     year: 2023 - 2024
+     description: Individual Project | December 2023 - January 2024
+        Conducted a performance comparison of models (ANN, Gemini, GPT) for news topic classification.
+        -	Enhanced my knowledge of essential NLP techniques for handling text data and gained experience in evaluating model performance to select the most suitable algorithm for the task.
+        Results: Gemini offered 10% higher usability, while ANN achieved the highest accuracy with high computational demands.
+        Technologies Used: Python, NLTK, Word2Vec, TensorFlow
+
+- title: Volunteer Experience
+  type: time_table
+  contents:
+    - title: Military Service
+      institution: Republic of Korea Army (ROKA)
+      year: 2018 - 2020
+      description:
+        - Led a squad of 10 in executing missions, emphasizing strategic communication and cohesion.
+
+- title: Leadership Experience
+  type: time_table
+  contents:
+    - title: Internal Affairs
+      institution: IIT KSA (Korean Students Associate)
+      year: 2023 - 2024
+      description:
+        - Organized monthly events to strengthen community ties within IIT, fostering a collaborative and inclusive environment.
+        - Hosted a keynote speaker featuring Google’s Senior Designer with 100+ student attendees from college campuses across Chicago.
 
 - title: License
   type: nested_list
@@ -48,25 +110,6 @@
         - Year of Issue | 2017
         - Issuing Department | Federal Aviation Administration (FAA)
         - Country of Issue   | United States of America
-
-
-- title: Experience
-  type: time_table
-  contents:
-    - title: Military Service
-      institution: Republic of Korea Army (ROKA)
-      year: 2018 - 2020
-      description:
-        - May 2018 - Jan 2020
-        - title: Leadership Experience
-          contents:
-            - Squad Leader for about 8 months
-    - title: Internal Affairs
-      institution: IIT KSA (Korean Students Associate)
-      year: 2023 - 2024
-      description:
-        - Aug 2023 - Present
-        - Oversight of Event Planning and Execution
 
 #    - title: Director
 #      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.

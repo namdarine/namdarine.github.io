@@ -4,23 +4,15 @@
     "label": "AI major Undergrade Student",
     "image": "",
     "email": "namdarine.code@gmail.com",
-    "phone": "(312) 885-7795",
-    "url": "https://www.linkedin.com/in/nam-gyu-lee/",
+    "LinkedIn": "https://www.linkedin.com/in/nam-gyu-lee/",
+    "Github": "https://github.com/namdarine",
     "summary": "",
     "location": {
-      "address": "60 E 32nd St",
       "postalCode": "60616",
       "city": "Chicago",
       "countryCode": "US",
       "region": "Illinois"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
-    ]
+    }
   },
   "education": [
     {
@@ -30,9 +22,9 @@
       "area": "Artificial Intelligence, Applied Mathmatics (Minor)",
       "studyType": "Undergrad",
       "startDate": "2021-08-21",
-      "endDate": "2024-12-15",
+      "endDate": "2025-05-15",
       "score": "",
-      "courses": ["Data Structure", "Algorithm", "Data Mining"]
+      "courses": ["Data Structure, Algorithm, Machine Learning, AI-Language Understanding, Data Mining, Linear Optimization, Regression, Information Security"]
     }
   ],
   "projects": [
@@ -48,7 +40,7 @@
   "skills": [
     {
       "title": "Technical skills",
-      "keywords": ["PYTHON (advanced)", "JAVA (intermediate)", "R (intermediate)", "HASKELL (beginner) "]
+      "keywords": ["PYTHON", "JAVA", "R", "HASKELL"]
     },
     {
       "title" : "Libraries & Frameworks",

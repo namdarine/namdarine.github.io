@@ -48,25 +48,25 @@
   contents:
     - title: <a href="https://github.com/namdarine/ML_PaaS">Machine Learning PaaS Web Application</a>
       year: 2024
-      description: Individual Project| May 2024 - Present
-        - Developing a scalable Machine Learning Platform as a Service web app that allows users to upload datasets for clustering or classification. The system uses AWS for distributed processing.
-        - Developing proficiency in containerizing applications and managing cloud resources, focusing on automating machine learning workflows for scalable web applications.
-        - Technologies Used: AWS, Python, Flask, pySpark, Docker
+      description: "Individual Project| May 2024 - Present"
+        "- Developing a scalable Machine Learning Platform as a Service web app that allows users to upload datasets for clustering or classification. The system uses AWS for distributed processing."
+        "- Developing proficiency in containerizing applications and managing cloud resources, focusing on automating machine learning workflows for scalable web applications."
+        "- Technologies Used: AWS, Python, Flask, pySpark, Docker"
 
     - title: <a href="https://github.com/namdarine/TIF_Chicago_Project">Chicago TIF Analysis</a>
       year: 2024
-      description: Illinois Tech | Jan 2024 - Apr 2024
-        Collaborated with a team of 5 to analyze the correlation between income, education, and TIF districts in Chicago, uncovering potential inequalities linked to TIFs and their socioeconomic impact on various racial demographics.
-        -	Led data extraction and filtering to ensure clean, relevant data for analysis aligned with the project requirements, enhancing overall project accuracy and reliability.
-        -	This role improved my knowledge of data processing and critical analysis, deepening my understanding of data’s role in highlighting social and economic disparities.
-        - Results: Found a 50% income gap between predominantly white ($76K) and non-white ($38K) TIF districts, indicating potential biases in fund allocation.
+      description: "Illinois Tech | Jan 2024 - Apr 2024"
+        "Collaborated with a team of 5 to analyze the correlation between income, education, and TIF districts in Chicago, uncovering potential inequalities linked to TIFs and their socioeconomic impact on various racial demographics."
+        "-	Led data extraction and filtering to ensure clean, relevant data for analysis aligned with the project requirements, enhancing overall project accuracy and reliability."
+        "-	This role improved my knowledge of data processing and critical analysis, deepening my understanding of data’s role in highlighting social and economic disparities."
+        "- Results: Found a 50% income gap between predominantly white ($76K) and non-white ($38K) TIF districts, indicating potential biases in fund allocation."
         - Technologies Used: Python, Pandas, GeoJSON, k-Means Clustering
 
     - title: <a href="https://github.com/namdarine/IIT_CLASS/tree/main/AI_LU/Assignment2">Wine classification with Naïve Bayes classifier</a>
       year: 2024
-      description: Illinois Tech, Individual Project | March 2024
-        - Implemented a Naïve Bayes classifier to categorize wine reviews, reducing label categories for efficiency.
-        -	Learned that removing stop words during preprocessing significantly impacted model performance, highlighting the importance of feature engineering in text classification.
+      description: "Illinois Tech, Individual Project | March 2024"
+        "- Implemented a Naïve Bayes classifier to categorize wine reviews, reducing label categories for efficiency."
+        "-	Learned that removing stop words during preprocessing significantly impacted model performance, highlighting the importance of feature engineering in text classification."
         - Results: 
             Achieved Macro-averaged F1-score: 0.7115
             Micro-averaged F1-score: 0.7728

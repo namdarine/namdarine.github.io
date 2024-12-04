@@ -78,6 +78,7 @@
     - title: <a href="https://github.com/namdarine/news_article_classification">Unsupervised Learning-Based Comparison for News Article Topic</a>
       year: 2023 - 2024
       description: Individual Project | December 2023 - January 2024
+      details:
         - Conducted a performance comparison of models (ANN, Gemini, GPT) for news topic classification.
         -	Enhanced my knowledge of essential NLP techniques for handling text data and gained experience in evaluating model performance to select the most suitable algorithm for the task.
         - Results: Gemini offered 10% higher usability, while ANN achieved the highest accuracy with high computational demands.

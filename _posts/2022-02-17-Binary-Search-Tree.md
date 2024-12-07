@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: Binary Search Tree (BST)
@@ -14,13 +13,14 @@ categories: JAVA Data_Structure
 
 toc:
   sidebar: left
-
 ---
 
 # Tree
+
 Tree is a **nonlinear** structure in which each node is capable of having many successor nodes, called _children_. Trees are <U>useful for representing lots of varied relationships among data items</U>.
 
 ## Definitions
+
 - **Tree**: A structure with a unique starting node (root), in which each node is capable of having multiple successor nodes (its children), and in which a unique path exists from the root to every other node.
 - **Root**: The top node of a tree structure; a node with no parent.
 - **Parent node**: The predecessor node of a node is its parent.
@@ -32,7 +32,9 @@ Tree is a **nonlinear** structure in which each node is capable of having many s
 </div>
 
 ## Require
+
 A tree's subtrees must be disjoint. There is a unique path from the root of a tree to any other node of the tree. Every child has only one parent.
+
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
 {% include figure.liquid loading="eager" path="assets/img/BST/BST_require.jpeg" class="img-fluid rounded z-depth-1" %}
@@ -40,6 +42,7 @@ A tree's subtrees must be disjoint. There is a unique path from the root of a tr
 </div>
 
 ## More Definitions
+
 - **Ancestor**: A parent of a node, or a parent of an ancestor.
 - **Descendant**: A child of a node, or a child of a descendant.
 - **Leaf**: A node that has no children.
@@ -49,6 +52,7 @@ A tree's subtrees must be disjoint. There is a unique path from the root of a tr
 - **Height**: The maximum level of the tree.
 
 ### Example
+
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
 {% include figure.liquid loading="eager" path="assets/img/BST/BST_example.jpeg" class="img-fluid rounded z-depth-1" %}
@@ -70,9 +74,12 @@ A tree's subtrees must be disjoint. There is a unique path from the root of a tr
 - The <U>height</U> of this tree is 3.
 
 ## Traversal
+
 ### Breadth-First Traversal
+
 Also called "level-order traversal"
 Using Queue
+
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
 {% include figure.liquid loading="eager" path="assets/img/BST/BST_breadth.jpeg" class="img-fluid rounded z-depth-1" %}
@@ -80,7 +87,9 @@ Using Queue
 </div>
 
 ### Depth-First Traversal
+
 Using Stack
+
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
 {% include figure.liquid loading="eager" path="assets/img/BST/BST_depth.jpeg" class="img-fluid rounded z-depth-1" %}
@@ -88,18 +97,22 @@ Using Stack
 </div>
 
 # Binary Search Trees
+
 - **Binary Tree**: A tree in which each node is capable of having **two child nodes**, a left child node and a right child node.
 
 A binary tree in which the key value in any node.
+
 - is **greater than or equal to** the key value in **its left child** and any of its descendants (the nodes in the left subtree).
 - is **less than** the key value in **its right child** and any of its descendants (the nodes in the right subtree).
 
 ## Feature
+
 1. Each node contains a distinct data value.
 2. The key values in the tree can be compared using "greater than" and "less than".
 3. The key value of each node in the tree is less than every key value in its right subtree, and greater than every key value in its left subtree.
 
 ## Traversals
+
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
 {% include figure.liquid loading="eager" path="assets/img/BST/BST_traversal.jpeg" class="img-fluid rounded z-depth-1" %}
@@ -107,11 +120,12 @@ A binary tree in which the key value in any node.
 </div>
 
 ### Preorder traversal
+
 1. Root
 2. Left subtree
 3. Right subtree
-P → F → B → H → G → S → R → Y → T → W → Z
-    
+   P → F → B → H → G → S → R → Y → T → W → Z
+
 ```java
 public void preorder() {
     preorder(root);
@@ -127,10 +141,11 @@ private void preorder(BSTNode<T> node) {
 ```
 
 ### Inorder traversal
+
 1. Left subtree
 2. Root
 3. Right subtree
-B → F → G → H → P  → R → S → T → W → Y → Z
+   B → F → G → H → P → R → S → T → W → Y → Z
 
 ```java
 public void inorder() {
@@ -147,10 +162,11 @@ private void inorder(BSTNode<T> node) {
 ```
 
 ### Postorder traversal
+
 1. Left subtree
 2. Right subtree
 3. Root
-B → G → H → F → R → W → T → Z → Y → S → P
+   B → G → H → F → R → W → T → Z → Y → S → P
 
 ```java
 public void postorder() {
@@ -167,7 +183,9 @@ private void postorder(BSTNode<T> node) {
 ```
 
 ## Implementation
+
 ### BST Node
+
 ```java
 public class BSTNode<T> {
     private T key;
@@ -224,6 +242,7 @@ public class BSTNode<T> {
 ```
 
 ### Constructors
+
 ```java
 import java.util.*;
 
@@ -244,6 +263,7 @@ public class BST<T> {
 ```
 
 ### Observers
+
 ```java
 // Observers
 // Calculate size of the tree with recursive method
@@ -254,7 +274,7 @@ public int recSize() {
 public int recSize(BSTNode<T> node) {
     if (node == null)
         return 0;
-    
+
     else
         return 1 + recSize(node.getLeft()) + recSize(node.getRight());
 }
@@ -290,7 +310,7 @@ public int maxDepth() {
 public int findDepth(BSTNode<T> node, int depth) {
     if (node == null)
         return depth;
-    
+
     return Math.max(findDepth(node.getLeft(), depth + 1), findDeptho(node.getRight(), depth + 1));
 }
 
@@ -302,12 +322,12 @@ public boolean isEmpty() {
 public T min() {
     if (isEmpty())  // If this BST is empty, returns null.
         return null;
-    
+
     else {
         BSTNode<T> node = root;
         while (node.getLeft() != null)
             node = node.getLeft();
-        
+
         return node.getKey();
     }
 }
@@ -316,21 +336,24 @@ public T min() {
 public T max() {
     if (isEmpty())  // If this BST is empty, returns null.
         return null;
-    
+
     else {
         BSTNode<T> node = root;
         while (node.getRight() != null)
             node = node.getRight();
-        
+
         return node.getKey();
     }
 }
 ```
 
 ### Transformers
+
 #### Add
+
 A new node is always inserted into its appropriate position in the tree as a leaf.
 If a new node is smaller than a root node, add the new node on the left of the root node. If it is greater than the root node, add it on the right of the root node.
+
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
 {% include figure.liquid loading="eager" path="assets/img/BST/BST_add.jpeg" class="img-fluid rounded z-depth-1" %}
@@ -344,11 +367,11 @@ private void addNode (BSTNode<T> node, T key) {
     int cond = compa(key, node.getKey());
     if (cond == 0)
         return;
-    
+
     else if (cond < 0) {
         if (node.getLeft() == null)
             node.setLeft(new BSTNode<T>(key));
-        
+
         else
             addNode(node.getLeft(), key);
     }
@@ -356,7 +379,7 @@ private void addNode (BSTNode<T> node, T key) {
     else {
         if (node.getRight() == null)
             node.setRight(new BSTNode<T>(key));
-        
+
         else
             addNode(node.getRight(), key);
     }
@@ -366,16 +389,18 @@ private void addNode (BSTNode<T> node, T key) {
 public void add(T key) {
     if (root == null)
         root = new BSTNode<T>(key);
-    
+
     else
         addNode(root, key);
 }
 ```
 
 #### Remove
+
 Must ensure when remove an element maintain the binary search tree property.
+
 - **Removing a leaf**
-Removing a leaf is simply a matter of setting the <U>appropriate link of its parent to null</U>.
+  Removing a leaf is simply a matter of setting the <U>appropriate link of its parent to null</U>.
 
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
@@ -384,7 +409,7 @@ Removing a leaf is simply a matter of setting the <U>appropriate link of its par
 </div>
 
 - **Removing a node with only one child**
-Make the reference from the parent <U>skip over the removed node and point instead to the child of the node we intend to remove</U>.
+  Make the reference from the parent <U>skip over the removed node and point instead to the child of the node we intend to remove</U>.
 
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
@@ -393,7 +418,7 @@ Make the reference from the parent <U>skip over the removed node and point inste
 </div>
 
 - **Removing a node with two children**
-Replaces the node's info with the info from another node in the tree so that the search property is retained - then remove this other node.
+  Replaces the node's info with the info from another node in the tree so that the search property is retained - then remove this other node.
 
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
@@ -411,13 +436,13 @@ public boolean remove (T target) {
 private BSTNode<T> remove (T target, BSTNode<T> node) {
     if (node == null)
         found = false;
-    
+
     else if (compa(target, node.getKey()) < 0)
         node.setLeft(remove(target, node.getLeft()));
-    
+
     else if (compa(target, node.getKey()) > 0)
         node.setRight((remove(target, node.getRight())));
-    
+
     else {
         node = removeNode(node);
         found = true;
@@ -430,10 +455,10 @@ private BSTNode<T> removeNode (BSTNode<T> node) {
     T data;
     if (node.getLeft() == null)
         return node.getRight();
-    
+
     else if (node.getRight() == null)
         return node.getLeft();
-    
+
     else {
         data = getPredecessor(node.getLeft());
         node.setKey(data);
@@ -444,13 +469,16 @@ private BSTNode<T> removeNode (BSTNode<T> node) {
 ```
 
 ## Performance
+
 - A Binary search tree is an appropriate structure for many of the same applications discussed previously in conjunction with sorted lists.
 - There is a space cost - the binary search tree, with its <U>extra reference in each node, takes up more memory space than a singly linked list</U>.
 - Similar to a sorted array-based list, it can be searched quickly, using a binary search.
 - Similar to a linked list, it allows insertions and removals without having to move large amounts of data.
 
 ## Big-O
+
 Compare BST to Linear LIsts
+
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
 {% include figure.liquid loading="eager" path="assets/img/BST/BST_bigO.jpeg" class="img-fluid rounded z-depth-1" %}
@@ -458,6 +486,7 @@ Compare BST to Linear LIsts
 </div>
 
 ## Binary Tree and its Array Representation
+
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
 {% include figure.liquid loading="eager" path="assets/img/BST/BST_array.jpeg" class="img-fluid rounded z-depth-1" %}
@@ -465,16 +494,20 @@ Compare BST to Linear LIsts
 </div>
 
 To implement the algorithms that manipulate the tree, must be able to find the left and right child of a node in the tree.
+
 - tree.nodes[index] left child is in tree.nodes[index * 2 + 1].
 - tree.nodes[index] right child is in tree.nodes[index * 2 + 2].
 
 Also, can determine the location of its parent node
+
 - tree.nodes[index]'s parent is in tree.nodes[(index - 1) / 2].
 
 If the tree is complete, this representation works best, space wise.
 
 ## Full Binary Tree
+
 A binary tree in which all of the leaves are on the same level and every non-leaf node has two children.
+
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
 {% include figure.liquid loading="eager" path="assets/img/BST/BST_full.png" class="img-fluid rounded z-depth-1" %}
@@ -482,7 +515,9 @@ A binary tree in which all of the leaves are on the same level and every non-lea
 </div>
 
 ## Complete Binary Tree
+
 A binary tree that is either full or full through the next-to-last level, with the leaves on the last level as far to the left as possible.
+
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
 {% include figure.liquid loading="eager" path="assets/img/BST/BST_complete.png" class="img-fluid rounded z-depth-1" %}
@@ -493,9 +528,10 @@ The complete binary tree with 'k' height has maximum $$2^{k+1} - 1$$ nodes.
 In the other words, the complete binary tree which saves 'n' nodes has log(n) height.
 
 ## Reference
-- _CS401-Data Structure_. (2021). Micheal Y. Choi, Ph.D. Illinois Institute of Technology. 
-- _Full Binary Tree_. (2019). Image. Retrieved February 15, 2022, from <a href="https://soldonii.tistory.com/75">soldonii</a>. 
-- _Complete Binary Tree_. (2018). Image. Retrieved February 15, 2022, from <a href="https://medium.com/jiwon-bae/data-structure-binary-tree-f6fe881b0554">medium.com/jiwon-bae</a>. 
 
->https://github.com/namdarine/DataStructure.git <br>
-Full code is in "BST" package in this repository.
+- _CS401-Data Structure_. (2021). Micheal Y. Choi, Ph.D. Illinois Institute of Technology.
+- _Full Binary Tree_. (2019). Image. Retrieved February 15, 2022, from <a href="https://soldonii.tistory.com/75">soldonii</a>.
+- _Complete Binary Tree_. (2018). Image. Retrieved February 15, 2022, from <a href="https://medium.com/jiwon-bae/data-structure-binary-tree-f6fe881b0554">medium.com/jiwon-bae</a>.
+
+> https://github.com/namdarine/DataStructure.git <br>
+> Full code is in "BST" package in this repository.

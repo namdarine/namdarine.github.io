@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: Dynamic Table
@@ -14,7 +13,6 @@ categories: JAVA
 
 toc:
   sidebar: left
-
 ---
 
 Could say the interface is the ‘guide line’ of the code. Using an interface reduces code modification and increases maintenance.
@@ -26,9 +24,9 @@ Java interface is similar to Java class.
 
 However, variables must be constants. Methods must be abstract. and the Java interface cannot be instantiated. We can use an interface to formally specify the logical level of an ADT. It provides a template for classes to fill.
 
-Classes **implement** interfaces, but **cannot** extend interfaces*. Cannot define constructors for a Java interface.
+Classes **implement** interfaces, but **cannot** extend interfaces\*. Cannot define constructors for a Java interface.
 
-*Class that implements an interface must implement all the methods declared in the interface. The method must have the same signature (name + parameters) declared in the interface. The class doesn’t need to implement the variables of an interface.
+\*Class that implements an interface must implement all the methods declared in the interface. The method must have the same signature (name + parameters) declared in the interface. The class doesn’t need to implement the variables of an interface.
 
 - All variables in an interface are public, static, and final + abstract, methods.
 - Java interface can contain constants.
@@ -37,7 +35,7 @@ Classes **implement** interfaces, but **cannot** extend interfaces*. Cannot defi
 
 l Java Abstract class
 
-l Java Nested class              can implement the interface.
+l Java Nested class can implement the interface.
 
 l Java Enum
 

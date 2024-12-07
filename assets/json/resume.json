@@ -24,7 +24,9 @@
       "startDate": "2021-08-21",
       "endDate": "2025-05-15",
       "score": "",
-      "courses": ["Data Structure, Algorithm, Machine Learning, AI-Language Understanding, Data Mining, Linear Optimization, Regression, Information Security"]
+      "courses": [
+        "Data Structure, Algorithm, Machine Learning, AI-Language Understanding, Data Mining, Linear Optimization, Regression, Information Security"
+      ]
     }
   ],
   "projects": [
@@ -43,7 +45,7 @@
       "keywords": ["PYTHON", "JAVA", "R", "HASKELL"]
     },
     {
-      "title" : "Libraries & Frameworks",
+      "title": "Libraries & Frameworks",
       "keywords": ["NLTK", "Scikit-learn", "TensorFlow", "Transformers"]
     },
     {
@@ -107,9 +109,7 @@
     {
       "name": "",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        ""
-      ]
+      "keywords": [""]
     }
   ],
   "references": [

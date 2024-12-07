@@ -5,7 +5,6 @@ inline: true
 related_posts: false
 ---
 
-Everett Community College  &nbsp;&nbsp;
+Everett Community College &nbsp;&nbsp;
 
 **Major** : Aviation Maintenance
-

@@ -108,7 +108,7 @@
 <span class="kd">public</span> <span class="kt">int</span> <span class="nf">recSize</span><span class="o">(</span><span class="nc">BSTNode</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="n">node</span><span class="o">)</span> <span class="o">{</span>
     <span class="k">if</span> <span class="o">(</span><span class="n">node</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span>
         <span class="k">return</span> <span class="mi">0</span><span class="o">;</span>
-    
+
     <span class="k">else</span>
         <span class="k">return</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">recSize</span><span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">getLeft</span><span class="o">())</span> <span class="o">+</span> <span class="n">recSize</span><span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">getRight</span><span class="o">());</span>
 <span class="o">}</span>
@@ -144,7 +144,7 @@
 <span class="kd">public</span> <span class="kt">int</span> <span class="nf">findDepth</span><span class="o">(</span><span class="nc">BSTNode</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="n">node</span><span class="o">,</span> <span class="kt">int</span> <span class="n">depth</span><span class="o">)</span> <span class="o">{</span>
     <span class="k">if</span> <span class="o">(</span><span class="n">node</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span>
         <span class="k">return</span> <span class="n">depth</span><span class="o">;</span>
-    
+
     <span class="k">return</span> <span class="nc">Math</span><span class="o">.</span><span class="na">max</span><span class="o">(</span><span class="n">findDepth</span><span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">getLeft</span><span class="o">(),</span> <span class="n">depth</span> <span class="o">+</span> <span class="mi">1</span><span class="o">),</span> <span class="n">findDeptho</span><span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">getRight</span><span class="o">(),</span> <span class="n">depth</span> <span class="o">+</span> <span class="mi">1</span><span class="o">));</span>
 <span class="o">}</span>
 
@@ -156,12 +156,12 @@
 <span class="kd">public</span> <span class="no">T</span> <span class="nf">min</span><span class="o">()</span> <span class="o">{</span>
     <span class="k">if</span> <span class="o">(</span><span class="n">isEmpty</span><span class="o">())</span>  <span class="c1">// If this BST is empty, returns null.</span>
         <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
-    
+
     <span class="k">else</span> <span class="o">{</span>
         <span class="nc">BSTNode</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="n">node</span> <span class="o">=</span> <span class="n">root</span><span class="o">;</span>
         <span class="k">while</span> <span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">getLeft</span><span class="o">()</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span>
             <span class="n">node</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="na">getLeft</span><span class="o">();</span>
-        
+
         <span class="k">return</span> <span class="n">node</span><span class="o">.</span><span class="na">getKey</span><span class="o">();</span>
     <span class="o">}</span>
 <span class="o">}</span>
@@ -170,12 +170,12 @@
 <span class="kd">public</span> <span class="no">T</span> <span class="nf">max</span><span class="o">()</span> <span class="o">{</span>
     <span class="k">if</span> <span class="o">(</span><span class="n">isEmpty</span><span class="o">())</span>  <span class="c1">// If this BST is empty, returns null.</span>
         <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
-    
+
     <span class="k">else</span> <span class="o">{</span>
         <span class="nc">BSTNode</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="n">node</span> <span class="o">=</span> <span class="n">root</span><span class="o">;</span>
         <span class="k">while</span> <span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">getRight</span><span class="o">()</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span>
             <span class="n">node</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="na">getRight</span><span class="o">();</span>
-        
+
         <span class="k">return</span> <span class="n">node</span><span class="o">.</span><span class="na">getKey</span><span class="o">();</span>
     <span class="o">}</span>
 <span class="o">}</span>
@@ -185,11 +185,11 @@
     <span class="kt">int</span> <span class="n">cond</span> <span class="o">=</span> <span class="n">compa</span><span class="o">(</span><span class="n">key</span><span class="o">,</span> <span class="n">node</span><span class="o">.</span><span class="na">getKey</span><span class="o">());</span>
     <span class="k">if</span> <span class="o">(</span><span class="n">cond</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span>
         <span class="k">return</span><span class="o">;</span>
-    
+
     <span class="k">else</span> <span class="nf">if</span> <span class="o">(</span><span class="n">cond</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
         <span class="k">if</span> <span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">getLeft</span><span class="o">()</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span>
             <span class="n">node</span><span class="o">.</span><span class="na">setLeft</span><span class="o">(</span><span class="k">new</span> <span class="nc">BSTNode</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;(</span><span class="n">key</span><span class="o">));</span>
-        
+
         <span class="k">else</span>
             <span class="nf">addNode</span><span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">getLeft</span><span class="o">(),</span> <span class="n">key</span><span class="o">);</span>
     <span class="o">}</span>
@@ -197,7 +197,7 @@
     <span class="k">else</span> <span class="o">{</span>
         <span class="k">if</span> <span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">getRight</span><span class="o">()</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span>
             <span class="n">node</span><span class="o">.</span><span class="na">setRight</span><span class="o">(</span><span class="k">new</span> <span class="nc">BSTNode</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;(</span><span class="n">key</span><span class="o">));</span>
-        
+
         <span class="k">else</span>
             <span class="nf">addNode</span><span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">getRight</span><span class="o">(),</span> <span class="n">key</span><span class="o">);</span>
     <span class="o">}</span>
@@ -207,7 +207,7 @@
 <span class="kd">public</span> <span class="kt">void</span> <span class="nf">add</span><span class="o">(</span><span class="no">T</span> <span class="n">key</span><span class="o">)</span> <span class="o">{</span>
     <span class="k">if</span> <span class="o">(</span><span class="n">root</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span>
         <span class="n">root</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BSTNode</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;(</span><span class="n">key</span><span class="o">);</span>
-    
+
     <span class="k">else</span>
         <span class="nf">addNode</span><span class="o">(</span><span class="n">root</span><span class="o">,</span> <span class="n">key</span><span class="o">);</span>
 <span class="o">}</span>
@@ -220,13 +220,13 @@
 <span class="kd">private</span> <span class="nc">BSTNode</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="nf">remove</span> <span class="o">(</span><span class="no">T</span> <span class="n">target</span><span class="o">,</span> <span class="nc">BSTNode</span><span class="o">&lt;</span><span class="no">T</span><span class="o">&gt;</span> <span class="n">node</span><span class="o">)</span> <span class="o">{</span>
     <span class="k">if</span> <span class="o">(</span><span class="n">node</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span>
         <span class="n">found</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
-    
+
     <span class="k">else</span> <span class="nf">if</span> <span class="o">(</span><span class="n">compa</span><span class="o">(</span><span class="n">target</span><span class="o">,</span> <span class="n">node</span><span class="o">.</span><span class="na">getKey</span><span class="o">())</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="o">)</span>
         <span class="n">node</span><span class="o">.</span><span class="na">setLeft</span><span class="o">(</span><span class="n">remove</span><span class="o">(</span><span class="n">target</span><span class="o">,</span> <span class="n">node</span><span class="o">.</span><span class="na">getLeft</span><span class="o">()));</span>
-    
+
     <span class="k">else</span> <span class="nf">if</span> <span class="o">(</span><span class="n">compa</span><span class="o">(</span><span class="n">target</span><span class="o">,</span> <span class="n">node</span><span class="o">.</span><span class="na">getKey</span><span class="o">())</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="o">)</span>
         <span class="n">node</span><span class="o">.</span><span class="na">setRight</span><span class="o">((</span><span class="n">remove</span><span class="o">(</span><span class="n">target</span><span class="o">,</span> <span class="n">node</span><span class="o">.</span><span class="na">getRight</span><span class="o">())));</span>
-    
+
     <span class="k">else</span> <span class="o">{</span>
         <span class="n">node</span> <span class="o">=</span> <span class="n">removeNode</span><span class="o">(</span><span class="n">node</span><span class="o">);</span>
         <span class="n">found</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
@@ -239,10 +239,10 @@
     <span class="no">T</span> <span class="n">data</span><span class="o">;</span>
     <span class="k">if</span> <span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">getLeft</span><span class="o">()</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span>
         <span class="k">return</span> <span class="n">node</span><span class="o">.</span><span class="na">getRight</span><span class="o">();</span>
-    
+
     <span class="k">else</span> <span class="nf">if</span> <span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">getRight</span><span class="o">()</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span>
         <span class="k">return</span> <span class="n">node</span><span class="o">.</span><span class="na">getLeft</span><span class="o">();</span>
-    
+
     <span class="k">else</span> <span class="o">{</span>
         <span class="n">data</span> <span class="o">=</span> <span class="n">getPredecessor</span><span class="o">(</span><span class="n">node</span><span class="o">.</span><span class="na">getLeft</span><span class="o">());</span>
         <span class="n">node</span><span class="o">.</span><span class="na">setKey</span><span class="o">(</span><span class="n">data</span><span class="o">);</span>

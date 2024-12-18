@@ -4,7 +4,7 @@ title: Machine Learning Final Preparation
 date: 2024-11-27 18:00:00
 description: Answering the questions to prepare the final
 tags: WIL
-categories: ML
+categories: AI/ML
 toc:
   sidebar: left
 ---

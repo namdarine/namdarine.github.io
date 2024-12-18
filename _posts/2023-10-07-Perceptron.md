@@ -9,7 +9,7 @@ description: Concepts and understanding of Perceptron
 
 tags: WIL
 
-categories: AI Data_Mining
+categories: AI/ML Data_Mining
 
 toc:
   sidebar: left

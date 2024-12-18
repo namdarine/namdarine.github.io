@@ -27,9 +27,9 @@ The goal of clustering is to divide a population or set of data points into grou
 
 # Algorithm
 
-1. For a given cluster assignment $$C$$, the total cluster variance, $$ \min\_{C, {m_k}\_1^K} {\sum\_{k=1}^{K} {N_k} \sum_{C(i)=k} {\sqrt{\abs{\abs{x*i - m_k}}}}} $$, is minimized with respect to $$ {m_1, \codts, m_K} $$ yiedling the means of the currently assigned clusters, $$ \bar{x_S} = \argmin\*{m} {\sum\_{i \in S} {\sqrt{\abs{\abs{x_i - m}}}}} $$.
-2. Given a current set of means $$ {m*1, \cdots, m_K} $$, $$ \min*{C, {m*k}\_1^K} {\sum*{k=1}^{K} {N*k} \sum*{C(i)=k} {\sqrt{\abs{\abs{x*i - m_k}}}}} $$ is minimized by assigning each observation to the closest cluster means.  
-   $$ C(i) = \argmin*{1 \leq k \leq} {\sqrt{\abs{\abs{x_i - m_k}}}} $$
+1. For a given cluster assignment $$C$$, the total cluster variance, $$ \min*{C, {m*{k}}_{1}^{K}} {\sum_{k=1}^{K} {N*{k}} \sum*{C(i)=k} {\sqrt{\|\|x*i - m_k\|\|}}} $$, is minimized with respect to $$ {m_1, \codts, m_K} $$ yiedling the means of the currently assigned clusters, $$ \bar{x_S} = \argmin*{m} {\sum\_{i \in S} {\sqrt{\|\|x_i - m\|\|}}} $$.
+2. Given a current set of means $$ {m*1, \cdots, m_K} $$, $$ \min*{C, {m*k}*{1}^{K}} {\sum*{k=1}^{K} {N*{k}} \sum*{C(i)=k} {\sqrt{\|\|x_i - m_k\|\|}}} $$ is minimized by assigning each observation to the closest cluster means.  
+   $$ C(i) = \argmin*{1 \leq k \leq} {\sqrt{\|\|x_i - m_k\|\|}} $$
 3. Steps 1 and 2 are iterated until the assignments do not change.
 
 Each of the first and second steps reduces the value of the criterion to ensure convergence. However, the results may indicate a suboptimal local minimum. In addition, start the algorithm with various random choices for the starting means, and we need to select the solution with the smallest value of the objective function.

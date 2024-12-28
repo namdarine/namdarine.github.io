@@ -9,8 +9,9 @@ toc:
   sidebar: left
 ---
 
-> Naive Bayes classifier is a family of linear **Probabilistic classifier**.  
-> -> Assumes the features are conditionally independent given the target.
+> Naive Bayes classifier is a family of linear **Probabilistic classifier**.
+
+-> Assumes the features are conditionally independent given the target.
 
 This classifier is one of the types of the simplest Bayesian network models.  
 Also, it is widely utilized for its simplicity and efficiency in machine learning.  

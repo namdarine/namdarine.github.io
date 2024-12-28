@@ -14,7 +14,7 @@ toc:
 The k-Means algorithm is one of the most popular iterative descent clustering methods and the unsupervised learning' algorithm.
 K stands for clustering which assigns data points to one of the K clusters based on the distance from the cluster center. Start by randomly assigning the cluster center to the space. Each data point is then assigned to one of the clusters based on the distance from the cluster center. Assign each point to one of the clusters and assign a new cluster center. This process runs repeatedly until a good cluster is found. Should assign points to one of the groups assuming that the number of clusters is given in advance in the analysis.  
 It aim for situations where all variables are quantitative types, and select Euclidean distance squared as a measure of dissimilarity.  
-$$ d(x*{i}, x*{i'}) = \sum_{j=1}^{p} {(x*{ij} - x*{i'j})^2} = \|\|{x*{i} - x\_{i'}}\|\|^2 $$
+$$ d(x*{i}, x*{i'}) = \sum\_{j=1}^{p} {(x*{ij} - x*{i'j})^2} = \|\|{x\*{i} - x\_{i'}}\|\|^2 $$
 
 In some cases, K is not clearly defined, and we have to think about the optimal number of K. K means clustering performs best when data is well separated. When data points overlap, this clustering is not suitable. To get help defining the K, we can use the 'Silhouette score' or the 'Elbow method'
 The criterion is minimized by allocating N observations to K clusters in such a way that the average difference from the cluster mean defined by the points of theat cluster within each cluster is minimized.

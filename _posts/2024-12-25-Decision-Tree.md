@@ -15,10 +15,11 @@ The decision tree is a non-parametric supervised learning method used for classi
 
 ## Structure
 
-**Nodes**: represent decisions or tests on attributes.  
- - **Root node**: represents the entire dataset and the initial decision to be made. - **Internal node**: represents decisions or tests on attributes. Each internal node has one or more branches.  
- - **Leaf node**: represents the final decision or prediction. No further splits occur at these nodes.  
-**Branche**: represents the outcome of a decision or test, leading to another node.
+**Nodes**: represent decisions or tests on attributes.
+
+- **Root node**: represents the entire dataset and the initial decision to be made. - **Internal node**: represents decisions or tests on attributes. Each internal node has one or more branches.
+- **Leaf node**: represents the final decision or prediction. No further splits occur at these nodes.  
+  **Branche**: represents the outcome of a decision or test, leading to another node.
 
 ## Metrics
 

@@ -11,13 +11,13 @@ AWS_SECRET_ACCESS_KEY=your-aws-secret-key
 <span class="nb">sudo </span>yum <span class="nb">install</span> <span class="nt">-y</span> nginx
 <span class="nb">sudo </span>systemctl start nginx
 <span class="nb">sudo </span>systemctl <span class="nb">enable </span>nginx
-</code></pre></div></div> <ul> <li>Check Nginx is working properly <div class="language-bash highlighter-rouge"> <div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl status nginx
-</code></pre></div> </div> </li> <li>AWS security group should allow 80 (HTTP) and 443 (HTTPS) ports.</li> </ul> <h2 id="delete-preferences-file-and-add-new-settings">Delete Preferences File and Add New Settings</h2> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo rm</span> <span class="nt">-f</span> /etc/nginx/nginx.conf
+</code></pre></div></div> <ul> <li>Check Nginx is working properly</li> </ul> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>systemctl status nginx
+</code></pre></div></div> <ul> <li>AWS security group should allow 80 (HTTP) and 443 (HTTPS) ports.</li> </ul> <h2 id="delete-preferences-file-and-add-new-settings">Delete Preferences File and Add New Settings</h2> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo rm</span> <span class="nt">-f</span> /etc/nginx/nginx.conf
 <span class="nb">sudo </span>nano /etc/nginx/nginx.conf
 </code></pre></div></div> <p>Then it will pop up the nano editor and need to edit following.</p> <div class="language-nginx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">server</span> <span class="p">{</span>
     <span class="kn">listen</span> <span class="mi">80</span><span class="p">;</span>
     <span class="kn">server_name</span> <span class="s">your-domain.com</span> <span class="s">www.your-domain.com</span><span class="p">;</span>
-    
+
     <span class="kn">location</span> <span class="n">/</span> <span class="p">{</span>
         <span class="kn">return</span> <span class="mi">301</span> <span class="s">https://</span><span class="nv">$host$request_uri</span><span class="p">;</span>
     <span class="p">}</span>
@@ -66,7 +66,7 @@ git pull origin main
 docker stop image-name-container
 docker <span class="nb">rm </span>image-name-container
 
-<span class="c"># Build and implement new image </span>
+<span class="c"># Build and implement new image</span>
 docker build <span class="nt">-t</span> image-name <span class="nb">.</span>
 docker run <span class="nt">-d</span> <span class="nt">--name</span> image-name-container <span class="nt">--env-file</span> .env <span class="nt">-p</span> port#:port# image-name
 </code></pre></div></div> <p>control + X -&gt; Y -&gt; Enter to save it.</p> <h2 id="grant-execution-permissions">Grant Execution Permissions</h2> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">chmod</span> +x /home/ec2-user/your-repo/auto_deploy.sh

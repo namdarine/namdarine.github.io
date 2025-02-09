@@ -114,13 +114,14 @@ The decision tree is a non-parametric supervised learning method used for classi
 
 7. **Feature Bias**
    - Features with more levels/categories may dominate the tree structure
-  
-## Application  
-- Business Decision Making  
-- Healthcare  
-- Finance  
-- Marketing  
-  
+
+## Application
+
+- Business Decision Making
+- Healthcare
+- Finance
+- Marketing
+
 ## Reference
 
 - “1.10. Decision Trees.” Scikit, scikit-learn.org/1.5/modules/tree.html. Accessed 30 Dec. 2024.

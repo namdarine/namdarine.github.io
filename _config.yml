@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: namdarine # the website title (if blank, full name will be used instead)
 first_name: Nam Gyu
 middle_name:
 last_name: Lee
@@ -276,7 +276,7 @@ jekyll-archives:
     category: "/blog/category/:name/"
 
 display_tags: ["WIL", "WIS", "Project"] # these tags will be displayed on the front page of your blog
-display_categories: ["AI/ML", "Data_Mining", "Python", "Algorithm", "Data_Structure", "Cloud_Computing"] # these categories will be displayed on the front page of your blog
+display_categories: ["AI/ML", "Data_Mining", "Python", "Algorithm", "Data_Structure", "Cloud_Computing", "CV", "paper_review"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

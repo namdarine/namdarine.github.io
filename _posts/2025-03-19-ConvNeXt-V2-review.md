@@ -34,7 +34,7 @@ Existing ConvNeXt is well-optimized for supervised learning, but when combined w
 
 - **Sparsal convolution**: Processing only the pixels seen in input $$ X \in \mathbb{R}^{H \times W \times C} $$. Output $$ Y = SparseConv(X, W) $$, where _W_ is learningable filters.
 
-- **GRN**: Global aggregation $$ G(X) = \vert\vertX\vert\vert\_{2} $$ for input $$ X \in \mathbb{R}^{H \times W \times C} $$, Normalization $$ N(X) = \frac{X}{G(X)} $$, Correction $$ Y = \gamma \cdot N(X) + \beta $$ ($$ \gamma $$, $$ \beta $$ are learnable parameters).
+- **GRN**: Global aggregation $$ G(X) = \vert\vert X \vert\vert\_{2} $$ for input $$ X \in \mathbb{R}^{H \times W \times C} $$, Normalization $$ N(X) = \frac{X}{G(X)} $$, Correction $$ Y = \gamma \cdot N(X) + \beta $$ ($$ \gamma $$, $$ \beta $$ are learnable parameters).
 
 - **Loss function**: $$ L = MSE({I}^{masked}, {\hat{I}}^{masked}) $$ for masked patches, where $$ \hat{I} $$ is a reconstructed image.
 

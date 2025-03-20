@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ConvNeXt V2: Co-designing and Scaling ConvNets with Masked Autoencoders" Review
+title: ConvNeXt V2 Paper Review
 date: 2025-03-19 18:00:00
 description: Paper review
 tags: WIS

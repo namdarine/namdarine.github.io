@@ -30,10 +30,10 @@ Existing ConvNeXt is well-optimized for supervised learning, but when combined w
 
 ### Defined variables and expressions
 
-- **Masking**: Generate a random mask **_M_** with 60% mask rate for input image **_I_**. **_M_** is defined in units of $ 32 \times 32 $ patches at the last stage and is tailored to the original resolution by upsampling.
-- **Sparsal convolution**: Processing only the pixels seen in input $ X \in \mathbb{R}^{H \times W \times C} $. Output $ Y = SparseConv(X, W) $, where $ W $ is learningable filters.
-- **GRN**: Global aggregation $ G(X) = ||X||\_2 $ for input $ X \in \mathbb{R}^{H \times W \times C} $, Normalization $ N(X) = \frac{X}{G(X)} $, Correction $ Y = \gamma \cdot N(X) + \beta $ ($ \gamma $, $ \beta $ are learnable parameters).
-- **Loss function**: $ L = MSE(I*{masked}, \hat{I}*{masked}) $ for masked patches, where $ \hat{I} $ is a reconstructed image.
+- **Masking**: Generate a random mask _M_ with 60% mask rate for input image _I_. _M_ is defined in units of $$ 32 \times 32 $$ patches at the last stage and is tailored to the original resolution by upsampling.
+- **Sparsal convolution**: Processing only the pixels seen in input $$ X \in \mathbb{R}^{H \times W \times C} $$. Output $$ Y = SparseConv(X, W) $$, where $$ W $$ is learningable filters.
+- **GRN**: Global aggregation $$ G(X) = ||X||_{2} $$ for input $$ X \in \mathbb{R}^{H \times W \times C} $$, Normalization $$ N(X) = \frac{X}{G(X)} $$, Correction $$ Y = \gamma \cdot N(X) + \beta $$ ($$ \gamma $$, $$ \beta $$ are learnable parameters).
+- **Loss function**: $$ L = MSE(I_{masked}, \hat{I}_{masked}) $$ for masked patches, where $$ \hat{I} $$ is a reconstructed image.
 
 ### Assumtion
 
@@ -89,11 +89,11 @@ Sparse convolution is inspired by 3D point clouds (Choy et al., 2019), and GRN i
   
 #### Experimental environment
 - **Hardware**: 256 core TPU-v3 pod (based on JAX)  
-- **Software**: PyTorch/JAX, https://github.com/rwightman/pytorch-image-models  
+- **Software**: PyTorch/JAX, [github](https://github.com/rwightman/pytorch-image-models)  
   
 #### Performance comparison indicators
 - **ImageNet**: Top-1 accuracy (%)  
-- **COCO**: $ mAP^{box} $ (detection), $ mAP^{mask} $ (segmentation)  
+- **COCO**: $$ mAP^{box} $$ (detection), $$ mAP^{mask} $$ (segmentation)  
 - **ADE20K**: $ mloU $ (Average intersection/union)  
 - **Comparative method**: Compare to V1 (supervised), Compare V2 + FCMAE, and Transformer (Swin, ViT)  
   

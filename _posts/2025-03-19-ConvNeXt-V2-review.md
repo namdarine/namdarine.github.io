@@ -85,7 +85,7 @@ Sparse convolution is inspired by 3D point clouds (Choy et al., 2019), and GRN i
 ### Experimental methods and datasets
 #### Used datasets
 - **ImageNet-1K**: 1,000 classes, 1.3 million images. 800 epochs of pre-training, 100 epochs of fine-tuning  
-- **ImageNet-22K**: 22,000 classes, used for intermediate fine tuning. $ 384 \times 384 $ resolution  
+- **ImageNet-22K**: 22,000 classes, used for intermediate fine tuning. $$ 384 \times 384 $$ resolution  
 - **COCO**: Object detection and instance segmentation, evaluated with Mask R-CNN  
 - **ADE20K**: Semantic segmentation, evaluated with UpperNet  
 - **Preprocessing**: Minimum data augmentation (random crop only), patch-wise normalization  
@@ -97,12 +97,12 @@ Sparse convolution is inspired by 3D point clouds (Choy et al., 2019), and GRN i
 #### Performance comparison indicators
 - **ImageNet**: Top-1 accuracy (%)  
 - **COCO**: $$ mAP^{box} $$ (detection), $$ mAP^{mask} $$ (segmentation)  
-- **ADE20K**: $ mloU $ (Average intersection/union)  
+- **ADE20K**: $$ mloU $$ (Average intersection/union)  
 - **Comparative method**: Compare to V1 (supervised), Compare V2 + FCMAE, and Transformer (Swin, ViT)  
   
 ## Result
 ### Summary
-- ***ImageNet-1K**: V2 + FCMAE is superior to supervised V1 (83.8% and 84.3%) with Base (84.6%), Large (85.6%), and Huge (86.3%). After IN-22K fine-tuning, Huge is 88.9% SOTA  
+- **ImageNet-1K**: V2 + FCMAE is superior to supervised V1 (83.8% and 84.3%) with Base (84.6%), Large (85.6%), and Huge (86.3%). After IN-22K fine-tuning, Huge is 88.9% SOTA  
   
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
@@ -110,7 +110,7 @@ Sparse convolution is inspired by 3D point clouds (Choy et al., 2019), and GRN i
 </div>
 </div>
   
-- **COCO**: V2 + FCMAE Huge is $ mAP^{box} $ 2.5 and $ mAP^{mask} $ 2.0 higher than Swin Huge  
+- **COCO**: V2 + FCMAE Huge is $$ mAP^{box} $$ 2.5 and $$ mAP^{mask} $$ 2.0 higher than Swin Huge  
   
 <div class="row mt-3">
 <div class="col-sm mt-3 mt-md-0">
